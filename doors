@@ -1,14 +1,14 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Exon Doors Entity Spawner (BETA)", "Synapse")
 local New = Window:NewTab("Spawns")
-local Section = New:NewSection("custom entity")
-Section:NewButton("Baller", "Doors da zueira", function()
+local Section = New:NewSection("custom entites")
+Section:NewButton("Baller", "Doors", function()
    local Creator = 
   loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 -- Create entity
 local entity = Creator.createEntity({
     CustomName = "Baller", -- Custom name of your entity
-    Model = "rbxassetid://11759326364", -- Can be GitHub file or rbxassetid
+    Model = "rbxassetid://11758520054", -- Can be GitHub file or rbxassetid
     Speed = 100, -- Percentage, 100 = default Rush speed
     DelayTime = 0, -- Time before starting cycles (seconds)
     HeightOffset = 0,
@@ -60,7 +60,7 @@ local entity = Creator.createEntity({
 Creator.runEntity(entity)
 end)
 
-Section:NewButton("BigScreech", "Doors da zueira", function()
+Section:NewButton("BigScreech", "Doors", function()
    local Creator = 
   loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 -- Create entity
@@ -118,13 +118,13 @@ local entity = Creator.createEntity({
 Creator.runEntity(entity)
 end)
 
-Section:NewButton("Baller (with kill) ", "Doors da zueira", function()
+Section:NewButton("Baller (with kill) ", "Doors", function()
    local Creator = 
   loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 -- Create entity
 local entity = Creator.createEntity({
     CustomName = "Baller", -- Custom name of your entity
-    Model = "rbxassetid://11759326364", -- Can be GitHub file or rbxassetid
+    Model = "rbxassetid://11758520054", -- Can be GitHub file or rbxassetid
     Speed = 100, -- Percentage, 100 = default Rush speed
     DelayTime = 0, -- Time before starting cycles (seconds)
     HeightOffset = 0,
