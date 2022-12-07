@@ -1,0 +1,235 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Exon Doors Entity Spawner (BETA)", "Synapse")
+local New = Window:NewTab("Spawns")
+local Section = New:NewSection("custom entity")
+Section:NewButton("Baller", "Doors da zueira", function()
+   local Creator = 
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    CustomName = "Baller", -- Custom name of your entity
+    Model = "rbxassetid://11759326364", -- Can be GitHub file or rbxassetid
+    Speed = 100, -- Percentage, 100 = default Rush speed
+    DelayTime = 0, -- Time before starting cycles (seconds)
+    HeightOffset = 0,
+    CanKill = false,
+    BreakLights = true,
+    FlickerLights = {
+        true, -- Enabled
+        1, -- Time (seconds)
+    },
+    Cycles = {
+        Min = 2,
+        Max = 4,
+        WaitTime = 3,
+    },
+    CamShake = {
+        true, -- Enabled
+        {5, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
+        100, -- Shake start distance (from Entity to you)
+    },
+    Jumpscare = {
+        false, -- Enabled ('false' if you don't want jumpscare)
+        {
+            Image1 = "rbxassetid://11372489796", -- Image1 url
+            Image2 = "rbxassetid://11372489796", -- Image2 url
+            Shake = true,
+            Sound1 = {
+                0, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Sound2 = {
+                0, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Flashing = {
+                true, -- Enabled
+                Color3.fromRGB(255, 0, 0), -- Color
+            },
+            Tease = {
+                true, -- Enabled ('false' if you don't want tease)
+                Min = 1,
+                Max = 3,
+            },
+        },
+    },
+    CustomDialog = {"YoU DieD tO BaLLer...", "easy to jiggle my balls", "KARDIAN LIKE BALLS"}, -- Custom death message (can be as long as you want)
+})
+
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
+Section:NewButton("BigScreech", "Doors da zueira", function()
+   local Creator = 
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    CustomName = "Screech", -- Custom name of your entity
+    Model = "rbxassetid://11760432999", -- Can be GitHub file or rbxassetid
+    Speed = 10, -- Percentage, 100 = default Rush speed
+    DelayTime = 0, -- Time before starting cycles (seconds)
+    HeightOffset = 0,
+    CanKill = false,
+    BreakLights = true,
+    FlickerLights = {
+        true, -- Enabled
+        1, -- Time (seconds)
+    },
+    Cycles = {
+        Min = 1,
+        Max = 1,
+        WaitTime = 1,
+    },
+    CamShake = {
+        true, -- Enabled
+        {5, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
+        100, -- Shake start distance (from Entity to you)
+    },
+    Jumpscare = {
+        false, -- Enabled ('false' if you don't want jumpscare)
+        {
+            Image1 = "rbxassetid://11372489796", -- Image1 url
+            Image2 = "rbxassetid://11372489796", -- Image2 url
+            Shake = true,
+            Sound1 = {
+                0, -- SoundId
+                { Volume = 0.0 }, -- Sound properties
+            },
+            Sound2 = {
+                0, -- SoundId
+                { Volume = 0.0 }, -- Sound properties
+            },
+            Flashing = {
+                true, -- Enabled
+                Color3.fromRGB(255, 0, 0), -- Color
+            },
+            Tease = {
+                true, -- Enabled ('false' if you don't want tease)
+                Min = 1,
+                Max = 3,
+            },
+        },
+    },
+    CustomDialog = {"YoU DieD tO PSst...", "don't look at him otherwise he'll kill you, when he does PSST stay still", "i have one secret: kardian like balls"}, -- Custom death message (can be as long as you want)
+})
+
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
+Section:NewButton("Baller (with kill) ", "Doors da zueira", function()
+   local Creator = 
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    CustomName = "Baller", -- Custom name of your entity
+    Model = "rbxassetid://11759326364", -- Can be GitHub file or rbxassetid
+    Speed = 100, -- Percentage, 100 = default Rush speed
+    DelayTime = 0, -- Time before starting cycles (seconds)
+    HeightOffset = 0,
+    CanKill = true,
+    BreakLights = true,
+    FlickerLights = {
+        true, -- Enabled
+        1, -- Time (seconds)
+    },
+    Cycles = {
+        Min = 2,
+        Max = 4,
+        WaitTime = 3,
+    },
+    CamShake = {
+        true, -- Enabled
+        {5, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
+        100, -- Shake start distance (from Entity to you)
+    },
+    Jumpscare = {
+        false, -- Enabled ('false' if you don't want jumpscare)
+        {
+            Image1 = "rbxassetid://11372489796", -- Image1 url
+            Image2 = "rbxassetid://11372489796", -- Image2 url
+            Shake = true,
+            Sound1 = {
+                0, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Sound2 = {
+                0, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Flashing = {
+                true, -- Enabled
+                Color3.fromRGB(255, 0, 0), -- Color
+            },
+            Tease = {
+                true, -- Enabled ('false' if you don't want tease)
+                Min = 1,
+                Max = 3,
+            },
+        },
+    },
+    CustomDialog = {"YoU DieD tO BaLLer...", "easy to jiggle my balls", "KARDIAN LIKE BALLS"}, -- Custom death message (can be as long as you want)
+})
+
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
+Section:NewButton("BigScreech (with kill) ", "Doors da zueira", function()
+   local Creator = 
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    CustomName = "Screech", -- Custom name of your entity
+    Model = "rbxassetid://11760432999", -- Can be GitHub file or rbxassetid
+    Speed = 10, -- Percentage, 100 = default Rush speed
+    DelayTime = 0, -- Time before starting cycles (seconds)
+    HeightOffset = 0,
+    CanKill = true,
+    BreakLights = true,
+    FlickerLights = {
+        true, -- Enabled
+        1, -- Time (seconds)
+    },
+    Cycles = {
+        Min = 1,
+        Max = 1,
+        WaitTime = 1,
+    },
+    CamShake = {
+        true, -- Enabled
+        {5, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
+        100, -- Shake start distance (from Entity to you)
+    },
+    Jumpscare = {
+        false, -- Enabled ('false' if you don't want jumpscare)
+        {
+            Image1 = "rbxassetid://11372489796", -- Image1 url
+            Image2 = "rbxassetid://11372489796", -- Image2 url
+            Shake = true,
+            Sound1 = {
+                0, -- SoundId
+                { Volume = 0.0 }, -- Sound properties
+            },
+            Sound2 = {
+                0, -- SoundId
+                { Volume = 0.0 }, -- Sound properties
+            },
+            Flashing = {
+                true, -- Enabled
+                Color3.fromRGB(255, 0, 0), -- Color
+            },
+            Tease = {
+                true, -- Enabled ('false' if you don't want tease)
+                Min = 1,
+                Max = 3,
+            },
+        },
+    },
+    CustomDialog = {"YoU DieD tO PSst...", "don't look at him otherwise he'll kill you, when he does PSST stay still", "i have one secret: kardian like balls"}, -- Custom death message (can be as long as you want)
+})
+
+-- Run the created entity
+Creator.runEntity(entity)
+end)
